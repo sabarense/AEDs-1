@@ -27,5 +27,12 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "stdio.h": "c",
+    "ctype.h": "c",
+    "stdlib.h": "c",
+    "stdbool.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "Enabled"
 }

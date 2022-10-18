@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/sabarense/OneDrive/Documentos/MeusProjetosGitHub/AEDs-1/LISTA13",
-      "program": "c:/Users/sabarense/OneDrive/Documentos/MeusProjetosGitHub/AEDs-1/LISTA13/build/Debug/outDebug",
+      "cwd": "c:/Users/sabarense/OneDrive/Documentos/MeusProjetosGitHub/AEDs-1/LISTA14",
+      "program": "c:/Users/sabarense/OneDrive/Documentos/MeusProjetosGitHub/AEDs-1/LISTA14/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
