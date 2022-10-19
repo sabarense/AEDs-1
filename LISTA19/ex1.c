@@ -15,14 +15,12 @@ int main()
 {
     printf("MESES DO ANO\n");
 
-    int mesesDoAno[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
-
+    int mesesDoAno[] = {31,28,31,30,31,30,31,31,30,31,30,31};
     int mesEscolhido;
+
     printf("Digite o mes desejado:\n");
     scanf("%i",&mesEscolhido);
-
-    printf("Mes:%i Dias do mes:%i", mesEscolhido,mesesDoAno[]);
-
-
+    
+    printf("Mes:%i Dias do mes:%i", mesEscolhido, mesesDoAno[mesEscolhido-1]);
  
 }
