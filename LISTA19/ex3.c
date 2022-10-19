@@ -4,24 +4,35 @@
 #include <stdbool.h>
 
 /*
-Construa um vetor que armazene a idade de cinco pessoas: a sua e a de mais quatro colegas. Em 
-seguida, calcule e escreva: 
-- a média das idades; 
-- a quantidade de pessoas com idade abaixo desta média. 
-O seu algoritmo deverá estar expresso em uma única função (a principal). 
+Construa um vetor que armazene a idade de cinco pessoas: a sua e a de mais quatro colegas. Em
+seguida, calcule e escreva:
+- a média das idades;
+- a quantidade de pessoas com idade abaixo desta média.
+O seu algoritmo deverá estar expresso em uma única função (a principal).
 */
 
-int main(){
-
+int main()
+{
     float soma = 0;
     float media;
-    int pessoasAbaixoMedia;
-    int idade[5] = {19,18,18,19,19};
+    int pessoasAbaixoMedia = 0;
+    int idade[] = {19, 18, 18, 19, 19};
+    int tamIdade = (int)(sizeof(idade) / sizeof(idade[0]));
 
-    for(int i = 0; i < strlen(idade); i++){
-        printf("%zu\n", strlen(idade));
-        soma++;
-        printf("%i", idade[i]);
+    for (int i = 0; i < tamIdade; i++)
+    {
+        soma += idade[i];
     }
 
+    media = soma / tamIdade;
+
+    for (int i = 0; i < tamIdade; i++)
+    {
+        if (idade[i] < media)
+        {
+            pessoasAbaixoMedia++;
+        }
+    }
+    printf("Media:%f\n", media);
+    printf("Pessoas abaixo da media:%i", pessoasAbaixoMedia);
 }
